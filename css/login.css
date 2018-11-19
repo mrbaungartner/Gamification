@@ -1,0 +1,79 @@
+/*background*/
+body{
+	background: url(../img/mw3-wallpaper-01-hero-1280x8001.jpg) no-repeat fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:   cover;
+	-o-background-size:     cover;
+	background-size:        cover;
+}
+
+/*centraliza todos os textos*/
+p{text-align:center;}
+
+/*posição do titulo*/
+#titulo{
+	margin-left:210px;
+}
+
+/************font**************/
+@font-face {
+    font-family: 'GODOFWAR';
+	src: url('../font/GODOFWAR.eot');
+	src: url('../font/GODOFWAR.eot?#iefix') format('embedded-opentype'),
+		 url('../font/GODOFWAR.ttf') format('truetype');
+}
+
+/*onde é aplicado a fonte*/
+#descLogin, p, a{
+	font-family: 'GODOFWAR';
+	color:#DBDADB;
+}
+
+/*local onde fica login e descrição*/
+#descLogin {
+    background-color: #333333;
+    border: 4px solid #444444;
+    border-radius: 10px 10px 10px 10px;
+    color: #BBBBBB;
+    height: 520px;   
+    width: 550px;
+    margin-left:100px;
+	margin-top:40px;
+	font-size:25px;
+	overflow:auto;	
+		
+	/* 	glass effect */
+/* 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, .55)), to(rgba(0, 0, 0, .85))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, .15)), color-stop(0.501, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0))); */
+/*     background: -moz-linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0)); */
+/*     background: linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));	  */
+	
+}
+
+/*login da pagina*/
+.login{
+	margin-top:150px; 
+	text-align:right; 
+	width: 295px;
+	margin-right: 40px;
+}
+
+/*bordas personalizadas para o login e descrição*/
+.modal_footerLogin {
+    background: url("../img/borda.png") no-repeat scroll 0 0 transparent;
+    height: 100px;   
+}
+
+/*posição da borda personalizada descrição*/
+.footerDesc{
+	margin-top: -14px;  
+	margin-left: 110px;
+}
+
+/*posição da borda personalizada login*/
+.footerLogin{
+	margin-top: -116px; 
+	margin-left: 295px;
+}
+
+/*retira o traço dos links*/
+a {text-decoration: none;}

@@ -1,0 +1,48 @@
+/* Folha de estilo referente ao template Estilo 2*/
+
+/*background*/
+body{
+	background: url(../img/gelo/gelo3.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.perfil, .ranking, .extras, .header{ background:rgba(90,149,167,0.7);}
+
+/*pintar as linhas impares da tabela*/
+tr:nth-child(odd) { 
+	background:rgb(168,220,225);
+	height:35px;
+}
+
+/*pintar as linhas pares da tabela*/
+tr:nth-child(even) { 
+	background:white;
+	height:35px;
+}
+
+tr:hover { 
+	background: #990000;
+}
+
+/*titulo da tabela*/
+th {	
+	background: -webkit-linear-gradient(bottom, #6FDBF5 0%, #2099DE 150%);
+	background: linear-gradient(to top, #6FDBF5 0%, #2099DE 150%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6FDBF5', endColorstr='#2099DE');
+}
+
+/************font**************/
+@font-face {
+    font-family: 'Bloody Stump';
+	src: url('../font/Bloody_Stump.eot');
+	src: url('../font/Bloody_Stump.eot?#iefix') format('embedded-opentype'),	
+		 url('../font/Bloody_Stump.ttf') format('truetype');
+}
+
+span, .geral, #table_ranking, a, #config, .itens{
+	font-family: 'Bloody Stump';
+	color:black;
+	
+}

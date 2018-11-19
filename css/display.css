@@ -1,0 +1,70 @@
+/* Folha de estilo referente ao modo que as 5 caixas (perfil, ranking, extras, header, geral) se comportam na tela*/
+
+
+
+
+.perfil{
+	position:relative;
+	width:22%;
+	height:715px;
+	border-left:1px solid;
+	border-right:1px solid;
+	border-bottom:1px solid;
+	display:  -webkit-box;
+	-webkit-box-orient: vertical;
+	float:left;
+}
+.ranking{
+	position:relative;
+	width:52%;
+	height:715px;
+	border-bottom:1px solid;
+	border-right:1px solid;
+	overflow:auto;
+	float:left;
+}
+.extras{
+	width:21.1%;
+	height:715px;
+	border-bottom:1px solid;
+	border-right:1px solid;	
+	float:left;	
+}
+
+header {	
+	height:100px; 
+}
+header #header_img{
+	float:left;
+	width:22%;
+	height:100%; 
+}
+header #header_img *{
+	padding: 10px;
+}
+header #header_ranking{
+	float:left;	
+	position: relative;
+	width:52%;	
+	height:100%; 
+}
+header #header_ranking *{
+	padding: 10px;
+}
+
+header #header_config{
+	float:left;
+	width:21.1%;	
+	height:100%; 
+}
+header #header_config *{
+	padding: 10px;
+}
+
+
+
+
+
+.geral{margin:0 auto;}
+.geral >div>div{padding: 10px;}
+.geral div{border-radius: 10px;}

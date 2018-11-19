@@ -1,0 +1,14 @@
+/*Folha de estilo para importar todos os outros estilos*/
+
+
+@import url('http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css');
+@import url('estilo.css');
+@import url('actions.css');
+@import url('display.css');
+@import url('comum.css');
+
+@import url('../modal/css/modal.css');
+
+
+/*teste scrollbar*/
+@import url('jquery.jscrollpane.css');

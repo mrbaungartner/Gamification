@@ -1,0 +1,142 @@
+/*Folha de estilo referente aos componentes em comum dos outros templates*/
+/*Referente ao player da musica do fundo*/
+.pause, .play{		
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+
+.pause{background: url(../img/pause.png)  no-repeat;}
+.play{background: url(../img/play.png)  no-repeat;}
+
+/*Imagens*/
+.caveira {padding:-100px; }
+img.patente{width:50px !important; }
+
+
+/*level*/
+.level_perfil{width:300px;padding-left:30px;}
+.level_perfil{width:300px;padding-left:30px;}
+
+/*Links*/
+.link {	
+	text-decoration: none;
+}
+
+/*estilo quests e skills */
+.submenu { font-family:'Wickenden Cafe NDP';font-size: 24pt ;width:300px;}
+.nome {	font-family:'Wickenden Cafe NDP';}
+
+/*retira o traço dos links*/
+a {text-decoration: none;}
+
+/*alinha as patentes na tabela*/
+.alinhaPatente{
+text-align:left;
+padding-left:26px;
+}
+
+/*****tratamento da tabela*******/
+table {	
+	border-collapse: collapse;	
+	text-align:center;
+}
+
+table.ranking, table.ranking * {width:715px;}
+table.ranking, table.ranking th, table.ranking tr, table.ranking td{
+	border:1px solid;
+	border-collapse:collapse;
+}
+
+/*titulo da tabela*/
+th {	
+	background: -webkit-linear-gradient(bottom, #004632 0%, #00120D 150%);
+	background: linear-gradient(to top, #004632 0%, #00120D 150%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00120D', endColorstr='#004632');
+}
+
+input{
+	border-radius: 10px;
+	border: 2px inset gray;
+	background-color: EBFFEB;
+}
+
+input[type='submit']{
+	border: 2px outset gray;
+	width:100px;
+	margin-right:80px;
+}
+
+/*transition ao passar mouse pelo botão*/
+input[type='submit']:hover{
+	background-color:#003300;
+	transition: background 0.3s;
+	-o-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	-webkit-transition: background 0.3s;
+}
+
+input[type='text']:not(:focus),
+input[type='password']:not(:focus),
+input[type='text']:focus,
+input[type='password']:focus
+{
+	outline:none;
+	padding: 3px;
+	padding-left:10px;
+	padding-right:10px;	
+} 
+
+
+/* HEADER */
+
+header #header_img{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-top-left-radius: 50% !important;
+}
+
+
+header #header_ranking{
+	border: 1px solid;
+}
+
+
+header #header_config{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-right: 1px solid;
+	border-top-right-radius: 50%;
+}
+
+
+
+header span{
+	font-size: 70px;
+
+}
+
+/* FOOTER */
+footer{	height: 50px;}
+footer #footer_2{	
+	width: 742px;
+	border-bottom: 1px solid;
+}
+
+
+footer #footer_3{
+	width: 328px;
+	border-bottom-right-radius: 50%;
+	border-bottom: 1px solid;
+	border-right: 1px solid;
+}
+
+footer #footer_1{
+	border-bottom-left-radius: 50%;	
+	width: 330px;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	
+	
+}

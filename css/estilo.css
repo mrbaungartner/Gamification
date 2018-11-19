@@ -1,0 +1,50 @@
+/* Folha de estilo referente ao template Estilo 1*/
+
+/*background*/
+body{
+	background: url(../img/imgfundo.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.perfil, .ranking, .extras{ background:rgba(0,0,0,0.5);}
+
+/*pintar as linhas impares da tabela*/
+tr:nth-child(odd) { 
+	background: #333333;
+	height:35px;
+}
+
+/*pintar as linhas pares da tabela*/
+tr:nth-child(even) { 
+	background: black;
+	height:35px;
+}
+
+tr:hover { 
+	background: #990000; 
+}
+
+.itens p, .progress p, .spanDesc {
+height:20px;
+color:white;
+}
+
+/************font**************/
+@font-face {
+    font-family: 'GODOFWAR';
+	src: url('../font/GODOFWAR.eot');
+	src: url('../font/GODOFWAR.eot?#iefix') format('embedded-opentype'),
+		 url('../font/GODOFWAR.ttf') format('truetype');
+}
+
+span, .geral, #table_ranking, a, #config, .itens{
+	font-family: 'GODOFWAR';
+	color:white;
+}
+
+.progress{
+font-family: 'Calibri';
+}

@@ -1,0 +1,128 @@
+header{
+height:100px;
+}
+
+/*background*/
+body{background: url(../img/mw3-wallpaper-01-hero-1280x8001.jpg) #000000 no-repeat fixed left top;
+  -webkit-background-size:cover;
+  -moz-background-size:   cover;
+  -o-background-size:     cover;
+  background-size:        cover;
+ }
+ 
+input{
+	border-radius: 10px;
+	border: 2px inset gray;
+	background-color: EBFFEB;
+}
+
+input[type='submit']{
+	border: 2px outset gray;
+	width:100px;
+	margin-right:80px;
+}
+
+/*transition ao passar mouse pelo botão*/
+input[type='submit']:hover{
+background-color:#003300;
+transition: background 0.3s;
+-o-transition: background 0.3s;
+-moz-transition: background 0.3s;
+-webkit-transition: background 0.3s;
+}
+
+input[type='text']:not(:focus),
+input[type='password']:not(:focus),
+input[type='text']:focus,
+input[type='password']:focus
+{
+	outline:none;
+	padding: 3px;
+	padding-left:10px;
+	padding-right:10px;
+	
+	
+} 
+
+#titulo{
+margin-left:210px;
+}
+
+#desc_login{
+background-color: black;
+color:white;
+text-align:right;
+vertical-align:center;
+width:470px;
+height:600px;
+padding:10px;
+padding-right:28px;
+border:8px inset gray;
+margin:5px;
+float:left;
+/* glass effect */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, .55)), to(rgba(0, 0, 0, .85))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, .15)), color-stop(0.501, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0)));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));	 
+}
+
+#iframe{
+background-color: black;
+color:white;
+text-align:right;
+vertical-align:center;
+width:440px;
+height:400px;
+padding:10px;
+padding-right:5px;
+border:8px inset gray;
+margin:8px;
+float:left;
+/* glass effect */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, .55)), to(rgba(0, 0, 0, .85))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, .15)), color-stop(0.501, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0)));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));	 
+}
+
+#login{
+background-color: black;
+color:white;
+text-align:right;
+vertical-align:center;
+width:270px;
+height:100px;
+padding:10px;
+padding-right:28px;
+border:8px inset gray;
+margin:5px;
+float:left;
+/* glass effect */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, .55)), to(rgba(0, 0, 0, .85))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, .15)), color-stop(0.501, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0)));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(top, rgba(0, 0, 0, .55), rgba(0, 0, 0, .85)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));	 
+}
+
+
+#table_esquerda{
+float:left;
+width:200px;
+}
+
+#table_esquerda_login{
+float:left;
+width:70px;
+}
+
+
+
+/************font**************/
+@font-face {
+    font-family: 'major_shift';
+	src: url('../font/major_shift.eot');
+	src: url('../font/major_shift.eot?#iefix') format('embedded-opentype'),	
+		 url('../font/major_shift.ttf') format('truetype');
+}
+
+#login,input[type='submit']{
+	font-family: 'major_shift';
+}

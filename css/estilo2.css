@@ -1,0 +1,40 @@
+/* Folha de estilo referente ao template Estilo 2*/
+
+/*background*/
+body{	
+	background: url(../img/imgfundo2.jpg) no-repeat fixed;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.perfil, .ranking, .extras,header >div, footer>div{ background:rgba(70,77,43,0.7);}
+/*pintar as linhas impares da tabela*/
+tr:nth-child(odd) { 
+	background:rgb(142,128,102);
+	height:35px;
+}
+
+/*pintar as linhas pares da tabela*/
+tr:nth-child(even) { 
+	background:rgb(76,47,14);
+	height:35px;
+}
+
+tr:hover { 
+	background: #990000; 
+}
+
+/************font**************/
+@font-face {
+    font-family: 'major_shift';
+	src: url('../font/major_shift.eot');
+	src: url('../font/major_shift.eot?#iefix') format('embedded-opentype'),	
+		 url('../font/major_shift.ttf') format('truetype');
+}
+
+span, .geral, #table_ranking, a, #config, .itens{
+	font-family: 'major_shift';
+	color:black;
+	
+}

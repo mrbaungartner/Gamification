@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1">
+	<title> Gamefication </title>
+	<link rel="stylesheet" type="text/css" href="css/estilo_geral.css"  />
+	<link rel="stylesheet" type="text/css" title="estilo2" href="css/estilo2.css" />
+	<link rel="stylesheet" type="text/css" title="estilo3" href="css/estilo3.css" />
+	<script src="js/trocaEstilo.js"></script>
+	<script src="js/scripts.js"></script> 
+</head>	
+<body>
+<audio id='reload'>
+<!-- 	<source src='musicas/shotgun-reload-old_school-RA_The_Sun_God-580332022.mp3' type='audio/mp3' ></source>
+	<source src='musicas/shotgun-reload-old_school-RA_The_Sun_God-580332022.wav' type='audio/wav' ></source> -->
+</audio>
+
+<audio id='musica_fundo' autoplay="autoplay">
+  <!--   <source src="musicas/modern warfare 3 theme j211.mp3" type="audio/mp3" ></source>
+	<source src="musicas/modern_warfare_3_theme_j211.wav" type="audio/wav"></source>
+ --></audio>
+
+	<header id="header">		
+		<div id="header_img" align="center">
+			<img id="logotipo" src="img/lux.png" alt="Logo" title="Logo">
+		</div>
+		<div id="header_ranking" align="center">
+			<span>RANKING</span>
+		</div>
+		<div id="header_config" align="center">			
+			<img style="cursor:pointer;"  id="submenu_config" src="img/config.png"  />	
+			<img class='pause' src="img/blank.png" id='musica' />
+		</div>
+		
+	</header>
+	
+	<div id='container' class="geral">		
+		<div class="modal-content" id="config_modal_content">
+				<form action='#' method='post'>
+					<strong>Escolher Estilos</strong><br />		
+					<strong>Estilo 1</strong>
+					<strong style="margin-left:40px;">Estilo 2</strong>
+					<strong style="margin-left:40px;">Estilo 3</strong><br />		
+					<a href="" onclick="setActiveStyleSheet('estilo1'); return false;" style="color:red"><img src="img/estilo1.jpg" alt="Estilo layout escuro"   title="Estilo layout escuro"   width="90" height="90"></a>
+					<a href="" onclick="setActiveStyleSheet('estilo2'); return false;" style="color:red"><img src="img/estilo2.jpg" alt="Estilo layout exército" title="Estilo layout exército" width="90" height="90"></a>
+					<a href="" onclick="setActiveStyleSheet('estilo3'); return false;" style="color:red"><img src="img/estilo3.jpg" alt="Estilo layout gelo"     title="Estilo layout gelo"     width="90" height="90"></a><br /><br />		
+					
+					<strong>Alterar Apelido</strong><br />
+					<input type="text" placeholder='Zezinho' name="apelido" id="apelido"></input><br /><br />
+					
+					<strong>Alterar Frase</strong><br />
+					<input type="text" placeholder='Aqui vai uma frase legal!!' name="frase" class="frase"></input><br /><br />		
+					
+					<div align="center">
+						<input type="submit" value="Alterar"></input>
+					</div>
+				</form>
+		</div>
+	</div>
+		
+		
+	
+	<div class="principal">		
+		<div class="perfil">
+			<p><span id="ola"></span></p>	
+			
+			<div align="center"><img id="perfil" src="img/perfil.jpg" width="250" height="200" /></div>
+			<div class="level_perfil"><span id="level"></span><br /><progress id="xp_barra" value="0" max="0"></progress><br><span id="xp_pontos" style="font-family:Calibri;font-weight:bold"></span><br><br></div>				
+			<div class="submenu"   id="submenu_quest"><div class="caveira" style="display: table-cell;"><img  src="img/caveira.png" /></div><span style="display: table-cell;">QUESTS</span></div>
+			<div class="submenu" id="submenu_skill"><div class="caveira" style="display: table-cell;"><img src="img/caveira.png" /></div><span style="display: table-cell;">SKILLS</span></div>
+			<br />
+			<div>
+				<span id="nome"></span><br /><br />
+				<span class="frase"></span><br /><br />
+				<span id="sexo"></span><br /><br />
+				<span><strong>&nbsp;Patente: </strong></span><img src="img/Cabo.png" height="25">
+			</div>
+		</div>
+	
+	
+	
+	
+	
+			<div id="div_ranking" class="ranking" >			
+				<table  class="sortable ranking" id="table_ranking">				
+					<tr>
+						<th>RANKING</th>
+						<th>NOME</th>
+						<th>PATENTE</th>
+						<th>PONTUACAO</th>
+					</tr>					
+				</table>				
+			</div>
+			
+		<span>
+			<div class="extras"><strong>&nbsp;Desafios</strong><br /><br />
+				<strong style="color: red">1- </strong> Descrição de alguma coisa, Descrição de alguma coisa Descrição de alguma coisa Descrição de alguma coisa<br /><br />
+				<strong style="color: red">2- </strong> Descrição de alguma coisa, Descrição de alguma coisa Descrição de alguma coisa Descrição de alguma coisa<br /><br />
+				<strong style="color: red">3- </strong> Descrição de alguma coisa, Descrição de alguma coisa Descrição de alguma coisa Descrição de alguma coisa<br /><br />
+				<strong style="color: red">4- </strong> Descrição de alguma coisa, Descrição de alguma coisa Descrição de alguma coisa Descrição de alguma coisa<br /><br />
+			</div>
+		</span>
+</div>
+	<footer class="footer" id="footer">
+		<div id="footer_1" align="center"></div>
+		<div id="footer_2" align="center"></div>
+		<div id="footer_3" align="center"></div>	
+	</footer>
+
+
+<!-- MODAIS -->
+<div class="modal-content" id="skill_modal_content">
+	<h3>SKILL</h3>
+	<p><b>Estão descritas abaixo suas habilidades</b></p>
+	<div class="flex_modal">
+		<div class="itens" style="color:white">
+			<p>Java</p>
+			<p>.Net</p>
+			<p>Delphi</p>
+			<p>HTML5</p>
+			<p>CSS3</p>
+			<p>JavaScript</p>
+			<p>TOTAL</p>						
+		</div>
+		<div class="progress">
+			<p><progress id="java_barra" value="0" max="200"></progress> <b id="java_pontos"></b></p>
+			<p><progress id="net_barra" value="0" max="200"></progress> <b id="net_pontos"></b></p>
+			<p><progress id="delphi_barra" value="0" max="200"></progress> <b id="delphi_pontos"></b></p>
+			<p><progress id="html5_barra" value="0" max="200"></progress> <b id="html5_pontos"></b></p>
+			<p><progress id="css3_barra" value="0" max="200"></progress> <b id="css3_pontos"></b></p>
+			<p><progress id="javascript_barra" value="0" max="200"></progress> <b id="javascript_pontos"></b></p>
+			<p><progress id="total_barra_skills" value="0" max="1200"></progress> <b id="total_pontos"></b></p>
+		</div>	
+	</div>
+</div>
+
+<div class="modal-content" id="quest_modal_content">
+	<h3>QUESTS</h3>
+	<p><b>Estão descritas abaixo suas quests a completar</b></p>
+	<div class="flex_modal">
+		<div class="itens">
+			<p  class="item" id="submenu_desc1">Quest: Projeto 1</p>
+			<p  class="item" id="submenu_desc2">Quest: Projeto 2 </p>
+			<p>TOTAL </p>
+		</div>
+		<div class="progress">
+			<p><progress id="quest1_barra" value="0" max="100"></progress> <span id="quest1_porc" class="spanDesc" style="font-family:Calibri;font-size:18px;font-weight:bold"></span></p>
+			<p><progress id="quest2_barra" value="0" max="100"></progress> <span id="quest2_porc" class="spanDesc" style="font-family:Calibri;font-size:18px;font-weight:bold"></span></p>
+			<p><progress id="total_barra_quests" value="0" max="100"></progress> <span id="total_porc" class="spanDesc" style="font-family:Calibri;font-size:18px;font-weight:bold"></span></p>
+		</div>
+	</div>
+</div>
+
+<div class="modal-content" id="desc1_modal_content">
+	<h3>Descricão da quest 1</h3>
+	<p>prin faucibus oposuere cubind isse sollnvelit sedretr.unt arra elismoonl iqua nguermentum nisl. Mauris acml d in lacus utenim adip iscing allit sit amet eui</p>
+</div>
+<div class="modal-content" id="desc2_modal_content">
+	<h3>Descricão da quest 2</h3>
+	<p>prin faucibus oposuere cubind isse sollnvelit sedretr.unt arra elismoonl iqua nguermentum nisl. Mauris acml d in lacus utenim adip iscing allit sit amet eui</p>
+</div>	
+
+<div class="modal-content" id="ranking_modal_content"></div>
+
+</body>
+</html>
